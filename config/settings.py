@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get(
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 # Pulls from .env and splits by comma into a list.
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+ALLOWED_HOSTS = os.environ.get("*", "127.0.0.1,localhost").split(",")
 
 
 # Application definition
